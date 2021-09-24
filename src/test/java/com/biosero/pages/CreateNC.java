@@ -11,7 +11,8 @@ public class CreateNC {
 
  public CreateNC(){
 
-     PageFactory.initElements(Driver.getDriver(),this);
+
+     PageFactory.initElements(Driver.getDriver(), this);
 
 
  }
@@ -31,9 +32,17 @@ public WebElement compName;
 @FindBy(xpath = "//select[@id='company']")
     public WebElement dropDown;
 
+@FindBy(xpath = "//input[@value='Create this computer']")
+    public WebElement crButton;
 
+@FindBy(id = "searchbox")
+    public WebElement searchBar;
 
+@FindBy(id="searchsubmit")
+    public WebElement filterButton;
 
+@FindBy (xpath = "//td/a")
+    public WebElement compLink;
 
 
 
